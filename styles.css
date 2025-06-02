@@ -1,52 +1,45 @@
-:root {
-  --spacing: 10px;
-  --blur: 10px;
-  --base: #ffc600;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  text-align: center;
-  padding: 2rem;
-  color: #333;
-}
-
-.controls {
-  margin-bottom: 2rem;
+  font-family: sans-serif;
+  background: #222;
+  color: white;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-}
-
-label {
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  font-size: 1rem;
+  min-height: 100vh;
+  margin: 0;
 }
 
-input[type="range"] {
-  margin-top: 0.5rem;
-  cursor: pointer;
+.wrapper {
+  position: relative;
 }
 
-input[type="color"] {
-  margin-top: 0.5rem;
-  width: 50px;
+video.flex {
+  display: block;
+  width: 765px;
+  height: 430px;
+  background: black;
+}
+
+.speed {
+  margin-top: 10px;
+  width: 765px;
   height: 30px;
+  background: #333;
   cursor: pointer;
-  border: none;
-  background: none;
+  position: relative;
+  border-radius: 5px;
+  user-select: none;
 }
 
-img {
-  max-width: 100%;
-  padding: var(--spacing);
-  background-color: var(--base);
-  filter: blur(var(--blur));
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+.speed-bar {
+  height: 100%;
+  width: 20%;
+  background: #e33;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: width 0.1s ease;
+  pointer-events: none;
 }
