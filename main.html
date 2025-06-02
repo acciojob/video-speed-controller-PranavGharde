@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Video Speed Scrubber</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>CSS Variable Controller</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <div class="wrapper">
-    <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" controls></video>
-    <div class="speed">
-      <div class="speed-bar">1×</div>
-    </div>
+  <h1>Adjust Image Styling Using CSS Variables</h1>
+
+  <div class="controls">
+    <label>Spacing:
+      <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+    </label>
+
+    <label>Blur:
+      <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+    </label>
+
+    <label>Base Color:
+      <input type="color" name="base" value="#ffc600">
+    </label>
   </div>
 
-<script  src="./script.js">
-  //Your code goes here
-</script>
+  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" alt="Sample Image" />
+
+  <script src="script.js"></script>
 </body>
 </html>
